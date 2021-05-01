@@ -3,7 +3,7 @@ class CreateNotes < ActiveRecord::Migration[6.1]
     create_table :notes do |t|
       t.string :content
       t.integer :color
-      t.integer :toggle
+      t.integer :checkbox
 
 
 

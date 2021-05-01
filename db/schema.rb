@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 2021_05_01_025007) do
   create_table "notes", force: :cascade do |t|
     t.string "content"
     t.integer "color"
-    t.integer "toggle"
+    t.integer "checkbox"
     t.integer "board_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
