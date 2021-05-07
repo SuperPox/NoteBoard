@@ -15,6 +15,14 @@ class BoardsController < ApplicationController
         render json: board
     end
 
+    def destroy
+        board = Board.find_by(id: params[:id])
+        board.destroy
+        render json: {message: "success"}
+    end
+
+    private
+
     def board_params
         params.require(:board).permit(:name, :icon, :color)
     end
